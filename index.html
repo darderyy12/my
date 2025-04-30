@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drive x - معرض السيارات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>drive x</h1>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#featured">سيارات مميزة</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>مرحباً بك في معرض drive x</h2>
+            <p>وجهتك الأولى لاكتشاف وشراء <strong>أفضل السيارات</strong>.</p>
+            <figure>
+                <!-- Using the downloaded sedan image -->
+                <img src="honda_civic_sedan.png" alt="سيارة هوندا سيفيك سيدان حديثة" width="600">
+                <figcaption>سيارة سيدان حديثة موديل 2025</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="featured">
+            <h2>سيارات مميزة</h2>
+            <article>
+                <h3>سيارة سيدان عائلية</h3>
+                <p><i>مثالية للعائلة</i>، تجمع بين الراحة والأمان.</p>
+                <!-- Using the downloaded Jaguar video -->
+                <video controls width="400">
+                    <source src="jaguar_video.mp4" type="video/mp4">
+                    متصفحك لا يدعم عرض الفيديو.
+                </video>
+            </article>
+            <article>
+                <h3>شاحنة بيك أب قوية</h3>
+                <p><b>أداء قوي</b> لجميع الطرق والتضاريس.</p>
+                <!-- Using the downloaded pickup image -->
+                <img src="ford_maverick_pickup.jpeg" alt="شاحنة فورد مافريك بيك أب" width="400">
+                <p>استمع لصوت المحرك:</p>
+                <audio controls>
+                    <!-- Using the downloaded audio file -->
+                    <source src="car_engine_sound.mp3" type="audio/mpeg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </article>
+            <div>
+                <h4>مواصفات سريعة</h4>
+                <table>
+                    <caption>مقارنة سريعة</caption>
+                    <thead>
+                        <tr>
+                            <th>الميزة</th>
+                            <th>سيدان (مثال)</th>
+                            <th>بيك أب (مثال)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>السعر المبدئي</td>
+                            <td>$25,000</td>
+                            <td>$35,000</td>
+                        </tr>
+                        <tr>
+                            <td>قوة المحرك</td>
+                            <td>180 حصان</td>
+                            <td>300 حصان</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="about">
+            <h2>من نحن</h2>
+            <p>نحن في <span>drive x</span> نسعى لتقديم تجربة شراء سيارات فريدة ومميزة لعملائنا.</p>
+            <blockquote>
+                <q>الجودة والشفافية هما أساس عملنا.</q>
+            </blockquote>
+        </section>
+
+        <aside>
+            <h3>هل تعلم؟</h3>
+            <p>نقدم عروض تمويل ميسرة وخدمات ما بعد البيع.</p>
+        </aside>
+
+        <hr>
+
+        <section id="contact">
+            <h2>اتصل بنا</h2>
+            <p>املأ النموذج التالي للتواصل معنا:</p>
+            <form action="#" method="post">
+                <input type="hidden" name="form_id" value="contact_123">
+                <div>
+                    <label for="name">الاسم:</label><br>
+                    <input type="text" id="name" name="user_name" required placeholder="أدخل اسمك الكامل">
+                </div>
+                <div>
+                    <label for="email">البريد الإلكتروني:</label><br>
+                    <input type="email" id="email" name="user_email" required>
+                </div>
+                <div>
+                    <label for="interest">نوع الاهتمام:</label><br>
+                    <select id="interest" name="interest_type">
+                        <option value="inquiry">استفسار عام</option>
+                        <option value="purchase">رغبة في الشراء</option>
+                        <option value="test_drive">طلب تجربة قيادة</option>
+                    </select>
+                </div>
+                 <div>
+                    <p>هل تفضل التواصل عبر:</p>
+                    <input type="radio" id="contact_email" name="contact_pref" value="email" checked>
+                    <label for="contact_email">البريد الإلكتروني</label><br>
+                    <input type="radio" id="contact_phone" name="contact_pref" value="phone">
+                    <label for="contact_phone">الهاتف</label>
+                </div>
+                <div>
+                    <label for="message">رسالتك:</label><br>
+                    <textarea id="message" name="user_message" rows="4" cols="50" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">أرغب في الاشتراك بالنشرة البريدية</label>
+                </div>
+                <br>
+                <button type="submit">إرسال</button>
+                <button type="reset">إعادة تعيين</button>
+            </form>
+        </section>
+
+        <section id="services">
+            <h2>خدماتنا</h2>
+            <p>بالإضافة إلى بيع السيارات الجديدة والمستعملة، نقدم مجموعة من الخدمات لدعم عملائنا:</p>
+            <ul>
+                <li>فحص فني شامل للسيارات</li>
+                <li>خيارات تمويل متنوعة</li>
+                <li>خدمات الصيانة الدورية والإصلاح</li>
+                <li>توفير قطع الغيار الأصلية</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025 drive x</p>
+    </footer>
+
+</body>
+</html>
+
